@@ -58,8 +58,8 @@ class Training:
 
 class Running(Training):
     """Тренировка: бег."""
-    coeff_calorie_1: float = 18
-    coeff_calorie_2: float = 20
+    coeff_calorie_1: int = 18
+    coeff_calorie_2: int = 20
 
     def get_spent_calories(self) -> float:
         """Получить количество затраченных калорий."""
@@ -93,7 +93,7 @@ class SportsWalking(Training):
 class Swimming(Training):
     """Тренировка: плавание."""
     coeff_calorie_1: float = 1.1
-    coeff_calorie_2: float = 2
+    coeff_calorie_2: int = 2
     LEN_STEP: float = 1.38
 
     def __init__(self,
